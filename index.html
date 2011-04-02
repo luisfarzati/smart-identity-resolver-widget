@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+	<header>
+		<h1>Smart identity resolver widget</h1>
+		<p><a id="readmore" href="#readmore">Read more/less</a> | <a href="https://github.com/luisfarzati/smart-identity-resolver-widget">Source at Github</a>
+		<div id="moresection">
+			<p>True Open ID adoption is still far, and the <a href="http://factoryjoe.com/blog/2009/04/06/does-openid-need-to-be-hard/">NASCAR approach</a> doesn't help much to bring it closer.</p>
+			<p>Initiatives like <a href="http://www.abstractioneer.org/2009/04/personal-web-discovery.html">Personal Web Discovery</a> are cool but translating an email address to an Open ID URL is just a part of the equation.</p>
+			<p>What if we are open to any user input, taking the responsability for understanding what the user meant?</p>
+			<p>We let him progressively learn about different choices, i.e., we could slowly push the concept that Vanity URLs are also useful for logging in.</p>
+			<p>Then it would become common to use an URL as an "username".</p>
+		</div>
+		<p style="color:black">In this example, the user is allowed to enter his Twitter @username, or his Facebook.com/vanityurl, or his Flickr screen name, or his Gmail address, or his blog URL.</p>
+		<p style="color:black"><strong>Even if he just writes down an username, we find which one he could be referring to.</strong></p>
+	</header>
+
+	<section id="main">
+		<a href="https://github.com/luisfarzati/smart-identity-resolver-widget"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub" /></a>
+		<hr>
+		<form id="widget">
+			<label for="username" style="display:block;line-height:1.4em;font-size:14px;font-weight:bold;color:#333;font-family:helvetica,arial,freesans,sans-serif;">Username</label>
+			<input id="username" name="username" type="text" style="width:400px;border:2px inset;font:99% helvetica, arial, freesans, sans-serif;font-size:14px;color:#666;padding:5px;padding-left:21px;background:#fff url(user.png) no-repeat 2px center">
+			<div id="selectorcaption" style="display:none;font-family:helvetica,arial;font-size:13px">Which one of these accounts do you want to login/signup with?</div>
+			<div id="accounts"></div>
+			<input id="login" type="submit" value="Continue">
+			<div class="account_template" style="display:none;float:left;width:56px">
+				<div style="width:54px;height:54px;border:1px solid #eee;position:absolute;" onmouseover="this.style.background='#fc6';this.style.border='1px solid #aaa';this.style.cursor='pointer'" onmouseout="this.style.border='1px solid #eee';this.style.background='#fff'" title="Login with ">
+					<img class="profile-pic" src="" style="width:48px;height:48px;display:block;margin:3px">
+					<img class="preloader" src="" style="display:none">
+					<img class="icon" src="" style="width:16px;height:16px;display:block;margin:0;position:absolute;bottom:2px;right:2px">
+				</div>
+			</div>
+		</form>
+	</section>
+
+	<footer>
+		<a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/InteractiveResource" property="dct:title" rel="dct:type">Smart identity resolver widget</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/luisfarzati/smart-identity-resolver-widget" property="cc:attributionName" rel="cc:attributionURL">Luis Farzati</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.
+	</footer>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"></script>
+	<script src="providers.js"></script>
+	<script src="index.js"></script>
+</body>
+</html>

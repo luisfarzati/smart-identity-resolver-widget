@@ -1,0 +1,15 @@
+#Smart identity resolver widget
+
+	* True Open ID adoption is still far, and the NASCAR approach doesn't help much to bring it closer.
+
+	* Initiatives like Personal Web Discovery are cool but translating an email address to an Open ID URL is just a part of the equation.
+
+	* What if we are open to any user input, taking the responsability for understanding what the user meant?
+
+	* We let him progressively learn about different choices, i.e., we could slowly push the concept that Vanity URLs are also useful for logging in.
+
+	* Then it would become common to use an URL as an "username".
+
+In this example, the user is allowed to enter his Twitter @username, or his Facebook.com/vanityurl, or his Flickr screen name, or his Gmail address, or his blog URL.
+
+Even if he just writes down an username, we find which one he could be referring to.
