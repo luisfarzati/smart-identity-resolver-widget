@@ -1,0 +1,31 @@
+html {
+	border-left: 48px solid #336699;
+	height: 100%;
+}
+
+body {
+	background: #f0f0f0;
+	font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif;
+	color: #333;
+	text-shadow: white 1px 1px 0px;
+}
+
+h1 {
+	margin-bottom: 0;
+}
+
+header p { 
+	margin-top: 0;
+}
+
+div#moresection {
+	display: none;
+}
+
+input[type="text"] {
+	background-color: #fff;
+}
+
+footer {
+	margin-top: 80px;
+}
