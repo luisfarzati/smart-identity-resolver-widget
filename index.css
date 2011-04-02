@@ -27,5 +27,6 @@ input[type="text"] {
 }
 
 footer {
+	display: block;
 	margin-top: 80px;
 }
