@@ -206,8 +206,8 @@ var providerPatterns = [
 	{ r: /^(http:\/\/)?(www\.)?facebook\.com\/.+$/, impl: FacebookAccount },
 	{ r: /^(http:\/\/)?(www\.)?youtube\.com\/.+$/, impl: YouTubeAccount },
 	{ r: /^(http:\/\/)?(www\.)?flickr\.com\/.+$/, impl: FlickrAccount },
-	{ r: /^[^@:\/]{3,}@gmail\.com$/, impl: GmailAccount },
-	{ r: /^[^@:\/]+@yahoo\.com$/, impl: YahooAccount },
+	{ r: /^([^@:\/]{3,}@)?gmail\.com$/, impl: GmailAccount },
+	{ r: /^([^@:\/]+@)?yahoo\.com$/, impl: YahooAccount },
 	{ r: /^(http:\/\/)?([^\/]+\.){2,}.+$/, impl: OpenIdAccount }
 ];
 
